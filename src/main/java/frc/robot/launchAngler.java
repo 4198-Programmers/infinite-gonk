@@ -28,28 +28,28 @@ public class launchAngler {
         // System.out.println(ranger.rangeFinder());
         // System.out.println("atRange");
         if(ranger.rangeFinder() > 70 && ranger.rangeFinder() < 300){
-                 if(ranger.rangeFinder()>=120 && ranger.rangeFinder()<145)
+                 if(ranger.rangeFinder()>=110 && ranger.rangeFinder()<170)
                     {
                         
-                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ;
+                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ; //c was 66.2420
                     
                     }
-             else if(ranger.rangeFinder()>=180 && ranger.rangeFinder()<205)
+             else if(ranger.rangeFinder()>=170 && ranger.rangeFinder()<220)
                     {
 
-                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ;
+                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.7420 ; //c was 66.7420
                     
                     }
-             else if(ranger.rangeFinder()>=235 && ranger.rangeFinder()<260)
+             else if(ranger.rangeFinder()>=220 && ranger.rangeFinder()<300)
                     {
 
-                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 67.2420 ;
+                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ; //c was 66.2420
                     
                     }
              else 
                     {
 
-                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ;
+                        Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ; //c was 66.2420
                     
                     }       
             
@@ -57,11 +57,8 @@ public class launchAngler {
             //original
             
             // System.out.println(howFar + " distance");
-<<<<<<< HEAD
             Robot.targetAngle = 0.000557516*Math.pow(atRange, 2) +- 0.29449*(atRange) + 66.2420 ; 
-=======
             Robot.targetAngle = 0.0006922*Math.pow(atRange, 2)+-0.24+2*(atRange)+56;
->>>>>>> 28eea95560ce7bc7d4f336d161c4b623309204f7
             // System.out.println(Robot.targetAngle + " targetAngle");
             */
              angleSet(Robot.targetAngle);
